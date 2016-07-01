@@ -8,6 +8,7 @@ function sumar()
 	var numeroDos = document.getElementById('numeroDos').value;
 	var resultado = parseInt(numeroUno) + parseInt(numeroDos);
 	alert("La suma es: "+resultado);
+	alert("sumar")
 }
 
 function restar()
