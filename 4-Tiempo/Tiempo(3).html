@@ -10,45 +10,42 @@
 		<!--final de Estilos-->
 
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsInstruccionIF (9).js"></script>
+		<script type="text/javascript" src="jsTiempo(3).js"></script>
         <!--Final de Lógica-Programación -->
-		
 
 	</head>
 	
-	<body>
+<body>
 		<div class="CajaUno animated bounceInDown">
 			
-			<h1>Presione el bot&oacute;n </h1>
+				<h1>Presione el bot&oacute;n para comenzar</h1>
 			<form id="FormIngreso">
-
-				<input type="number" id="numero">
 
 				
 			</form>
 			
 		</div>
-		<div class="CajaUno animated bounceInLeft">
-			
+		<div class="CajaUno animated bounceInLeft">			
 		
+			<button  class="MiBotonUTN" onclick="inicio()" >Iniciar</button>
+			<button  class="MiBotonUTN" onclick="fin()" >Finalizar</button>
 			
-			<button  class="MiBotonUTNLinea" onclick="Mostrar()" >Mostrar  n&uacute;mero RANDOM</button>
-
 		</div>
 
 		<div class="CajaEnunciado animated bounceInLeft">
 			<h2>Enunciado:</h2>
 			
 				<h3>
-					Al presionar el Bot&oacute;n, mostar un n&uacute;mero Random del 1 al 10 inclusive 
-				
+					al presionar el bot&oacute;n INICIAR se debe mostrar un mensaje de bienvenida
+					"Bienvenidos a la UTN FRA" cada 2 segundos, y mostar  la cantidad de veces mostrado (contador).
+					</br>al presionar el bot&oacute;n FINALIZAR se debe detener los mensajes.
 				</h3>
 			
 			
 		</div>
 
 		<div class="CajaAbajo animated bounceInUp">
-			<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+				<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
 		</div>
 	</body>
 </html>

@@ -8,20 +8,22 @@
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
 		<link rel="stylesheet" type="text/css" href="../animacion.css">
 		<!--final de Estilos-->
-		
+
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsInstruccionIF (10).js"></script>
+		<script type="text/javascript" src="jsTiempo(1).js"></script>
         <!--Final de Lógica-Programación -->
-		
 
 	</head>
+
+
 	<body>
 		<div class="CajaUno animated bounceInDown">
 			
-			<h1>Presione el bot&oacute;n </h1>
+			<h1>Presione el bot&oacute;n para comenzar</h1>
 			<form id="FormIngreso">
 
-				<input type="text" id="numero">
+				
+
 
 				
 			</form>
@@ -31,7 +33,8 @@
 			
 		
 			
-			<button  class="MiBotonUTNLinea" onclick="Mostrar()" >Mostrar  resultado del ex&aacute;men</button>
+			<button  class="MiBotonUTN" onclick="inicio()" >Iniciar</button>
+	
 
 		</div>
 
@@ -39,11 +42,8 @@
 			<h2>Enunciado:</h2>
 			
 				<h3>
-					Al presionar el Bot&oacute;n, 
-					asignar una nota RANDOM al examen y mostar:
-					"EXCELENTE" para notas igual a 9 o 10,
-					"APROB&Oacute;" para notas mayores a 4,
-					"Vamos, la proxima se puede" para notas menores a 4
+					al presionar el bot&oacute;n INICIAR se debe mostrar un mensaje de bienvenida:
+					"Bienvenidos a la UTN FRA" cada 3 segundos.
 				
 				</h3>
 			
@@ -51,7 +51,8 @@
 		</div>
 
 		<div class="CajaAbajo animated bounceInUp">
-			<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+				<a  class="MiBotonUTNLinea" onclick="location.href='index.html'" >Men&uacute; ejercicios</a>	
+	
 		</div>
 	</body>
 </html>

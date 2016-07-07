@@ -8,9 +8,9 @@
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
 		<link rel="stylesheet" type="text/css" href="../animacion.css">
 		<!--final de Estilos-->
-		
+
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsInstruccionIF (10).js"></script>
+		<script type="text/javascript" src="jsTiempo(8).js"></script>
         <!--Final de Lógica-Programación -->
 		
 
@@ -18,33 +18,27 @@
 	<body>
 		<div class="CajaUno animated bounceInDown">
 			
-			<h1>Presione el bot&oacute;n </h1>
+				<h1>Presione el bot&oacute;n para comenzar</h1>
 			<form id="FormIngreso">
-
-				<input type="text" id="numero">
 
 				
 			</form>
 			
 		</div>
-		<div class="CajaUno animated bounceInLeft">
-			
+		<div class="CajaUno animated bounceInLeft">			
 		
+			<button  class="MiBotonUTN" onclick="inicio()" >Iniciar</button>
 			
-			<button  class="MiBotonUTNLinea" onclick="Mostrar()" >Mostrar  resultado del ex&aacute;men</button>
-
+			<button  id="secreto"  style="visibility:hidden;" class="MiBotonUTN" onclick="ContarMilisegundos()"  >el oculto</button>
 		</div>
 
 		<div class="CajaEnunciado animated bounceInLeft">
 			<h2>Enunciado:</h2>
 			
 				<h3>
-					Al presionar el Bot&oacute;n, 
-					asignar una nota RANDOM al examen y mostar:
-					"EXCELENTE" para notas igual a 9 o 10,
-					"APROB&Oacute;" para notas mayores a 4,
-					"Vamos, la proxima se puede" para notas menores a 4
-				
+					Luego de presiona el bot&oacute;n 'Iniciar',se dispar&aacute; un temporizador de una funcion que haga visible el bot&oacute;n "el oculto" y que tome el tiempo de inicio. 
+					</br> El bot&oacute;n "el oculto" ejecutar&aacute; la function "ContarMilisegundos" que tome el tiempo de finalizaci&oacute;n
+					calcule la diferencia y muestre el resultado.
 				</h3>
 			
 			

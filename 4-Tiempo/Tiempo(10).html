@@ -8,43 +8,39 @@
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
 		<link rel="stylesheet" type="text/css" href="../animacion.css">
 		<!--final de Estilos-->
-		
+
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsInstruccionIF (10).js"></script>
+		<script type="text/javascript" src="jsTiempo(10).js"></script>
         <!--Final de Lógica-Programación -->
 		
 
 	</head>
-	<body>
+	<body onload="inicio()">
 		<div class="CajaUno animated bounceInDown">
 			
-			<h1>Presione el bot&oacute;n </h1>
+				<h1>Contar el tiempo</h1>
 			<form id="FormIngreso">
-
-				<input type="text" id="numero">
 
 				
 			</form>
 			
 		</div>
-		<div class="CajaUno animated bounceInLeft">
-			
+		<div class="CajaUno animated bounceInLeft">			
 		
 			
-			<button  class="MiBotonUTNLinea" onclick="Mostrar()" >Mostrar  resultado del ex&aacute;men</button>
-
+			
+			<button  id="secreto"  style="visibility:hidden;" class="MiBotonUTN" onclick="ContarMilisegundos()"  >el oculto</button>
 		</div>
 
 		<div class="CajaEnunciado animated bounceInLeft">
 			<h2>Enunciado:</h2>
 			
 				<h3>
-					Al presionar el Bot&oacute;n, 
-					asignar una nota RANDOM al examen y mostar:
-					"EXCELENTE" para notas igual a 9 o 10,
-					"APROB&Oacute;" para notas mayores a 4,
-					"Vamos, la proxima se puede" para notas menores a 4
-				
+					contuniando con el ejercicio anterior, sumandole los siguientes mensajes.
+					</br>*si Tardo entre 0 y 500 milisegundos :"Usted es Flash".
+					</br>*si Tardo entre 501 y 1000 milisegundos :"bien ah&iacute;, segui practicando".
+					</br>*si Tardo entre 1001 y 3000 milisegundos :"tenemos los deditos duros???".
+					</br>*si Tardo mas de 3000 milisegundos :"Te quedastes dormido???".	
 				</h3>
 			
 			
