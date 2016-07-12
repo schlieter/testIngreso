@@ -25,7 +25,6 @@ function PrecioFinal ()
 	var PrecioDos = document.getElementById('PrecioDos').value;
 	var PrecioTres = document.getElementById('PrecioTres').value;
 	var resultado = parseInt(PrecioUno)+parseInt(PrecioDos)+parseInt(PrecioTres);
-	var IVA = resultado * 0.21;
-	var resultadofinal = resultado + IVA;
-	alert("Precio final con IVA es: "+resultadofinal);
+	var IVA = resultado * 1.21;
+	alert("Precio final con IVA es: "+IVA);
 }
