@@ -9,8 +9,97 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{
- var lamparita = 35;
+{var precioBruto
+ var precioNeto
+ var descuento
+ var cantidad = document.getElementById('Cantidad').value;
+ var marca = document.getElementById('Marca').value;
+ precioBruto = 35 * cantidad;
+ switch (marca)
+ {
+ 	case "ArgentinaLuz" :
+ 		if (cantidad == 3)
+ 		{
+ 			descuento = 0.85;
+ 		}
+ 		else 
+ 		{
+ 			if (cantidad == 4)
+ 			{
+ 				descuento = 0.75;
+ 			}
+ 			else 
+ 			{
+ 				if (cantidad == 5)
+ 				{
+ 					descuento = 0.6;
+ 				}
+ 				else 
+ 				{
+ 					descuento = 0.5;
+ 				}
+ 				
+ 			}
+ 		}
+ 		break;
+ 	case "FelipeLamparas" :
+ 		if (cantidad == 3)
+ 		{
+ 			descuento = 0.9;
+ 		}
+ 		else 
+ 		{
+ 			if (cantidad == 4)
+ 			{
+ 				descuento = 0.75; 
+ 			}
+ 			else
+ 			{
+ 				if (cantidad == 5)
+ 				{
+ 					descuento = 0.7;
+ 				}
+ 				else 
+ 				{
+ 					descuento = 0.5;
+ 				}
+ 			}
+ 		}
+ 		break;
+ 	case "JeLuz":
+ 	case "HazIluminacion":
+ 	case "Osram":
+ 		if (cantidad == 3)
+ 		{
+ 			descuento = 0.95;
+ 		} 
+ 		else
+ 		{
+ 			if (cantidad == 4)
+ 			{
+ 				descuento = 0.8; 
+ 			}
+ 			else
+ 			{
+ 				if (cantidad == 5)
+ 				{
+ 					descuento = 0.7;
+ 				}
+ 				else
+ 				{
+ 					descuento = 0.5;
+ 				}
+ 			}
+ 		}
+ 	break	
+ }
+ precioNeto = precioBruto * descuento;
+ if (precioNeto >)
+ document.getElementById('precioDescuento').value = precioNeto;
+
+
+
+ /*var lamparita = 35;
  var cantidad = document.getElementById('Cantidad').value;	
  var marca = document.getElementById('Marca').value;
  var precio = lamparita * cantidad;
@@ -94,5 +183,5 @@ function CalcularPrecio ()
  	var y = preciofinal + ingBrutos;
  	document.getElementById('precioDescuento').value = y;
  	alert("IIBB Usted pago $"+ingBrutos);
- }
+ }*/
 }
