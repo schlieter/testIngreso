@@ -94,8 +94,13 @@ function CalcularPrecio ()
  	break	
  }
  precioNeto = precioBruto * descuento;
- if (precioNeto >)
- document.getElementById('precioDescuento').value = precioNeto;
+ if (precioNeto > 120)
+ 	{
+ 		var IIBB = precioNeto * 0.1;
+ 		alert("IIBB: "+IIBB);
+ 		var precioTotal = IIBB + precioNeto;
+ 	}
+ document.getElementById('precioDescuento').value = precioTotal;
 
 
 
