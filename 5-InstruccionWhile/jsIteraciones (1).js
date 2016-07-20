@@ -1,7 +1,7 @@
 function Mostrar()
 {
 	var contador = 0;
-	while(1)
+	while(1)//el uno equivale a true
 	{
 		contador = contador + 1;
 		if ( contador == 3)
