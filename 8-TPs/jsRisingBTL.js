@@ -15,16 +15,24 @@ function ComenzarIngreso ()
  	Edad = prompt("Error, ingrese edad nuevamente: ");
  }
  document.getElementById('Edad').value = Edad;
+
  var Sexo = prompt("Ingrese sexo:");
  while(!isNaN(Sexo) || (Sexo != "m" && Sexo != "f"))
  {
  	Sexo = prompt("Error, ingrese sexo nuevamente: ");
  }
  document.getElementById('Sexo').value = Sexo;
+
  var EstadoCivil = prompt("Ingrese estado civil:")
  while(isNaN(EstadoCivil) || (EstadoCivil < 1 || EstadoCivil > 4))
  {
  	EstadoCivil = prompt("Ingrese nuevamente el estado civil");
+ }
+ switch(EstadoCivil)
+ {
+ 	case "1":
+ 	document.getElementById('EstadoCivil').value = "Soltero";
+ 	break;
  }
  
 
