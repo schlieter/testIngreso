@@ -8,6 +8,10 @@ function Mostrar()
 	{
 		contador++;
 		numero = prompt("Ingrese un numero: ");
+		while(isNaN(numero))
+		{
+			numero = prompt("Error, ingrese nuevamente un numero: ");
+		}	
 		acumulador = acumulador + parseInt(numero);
 	}
 

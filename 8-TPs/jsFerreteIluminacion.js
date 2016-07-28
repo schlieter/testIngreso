@@ -9,7 +9,8 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 
  */
 function CalcularPrecio () 
-{var precioBruto
+{
+ /*var precioBruto
  var precioNeto
  var descuento
  var cantidad = document.getElementById('Cantidad').value;
@@ -102,9 +103,9 @@ function CalcularPrecio ()
  	}
  document.getElementById('precioDescuento').value = precioTotal;
 
+*/
 
-
- /*var lamparita = 35;
+ var lamparita = 35;
  var cantidad = document.getElementById('Cantidad').value;	
  var marca = document.getElementById('Marca').value;
  var precio = lamparita * cantidad;
@@ -188,5 +189,5 @@ function CalcularPrecio ()
  	var y = preciofinal + ingBrutos;
  	document.getElementById('precioDescuento').value = y;
  	alert("IIBB Usted pago $"+ingBrutos);
- }*/
+ }
 }

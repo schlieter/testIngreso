@@ -9,5 +9,30 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
+ var Edad = prompt("Ingrese edad: ");
+ while(isNaN(Edad) || (Edad < 18 || Edad > 90))
+ {
+ 	Edad = prompt("Error, ingrese edad nuevamente: ");
+ }
+ document.getElementById('Edad').value = Edad;
+ var Sexo = prompt("Ingrese sexo:");
+ while(!isNaN(Sexo) || (Sexo != "m" && Sexo != "f"))
+ {
+ 	Sexo = prompt("Error, ingrese sexo nuevamente: ");
+ }
+ document.getElementById('Sexo').value = Sexo;
+ var EstadoCivil = prompt("Ingrese estado civil:")
+ while(isNaN(EstadoCivil) || (EstadoCivil < 1 || EstadoCivil > 4))
+ {
+ 	EstadoCivil = prompt("Ingrese nuevamente el estado civil");
+ }
  
+
+
+
+
+ 
+ 
+
+
 }
