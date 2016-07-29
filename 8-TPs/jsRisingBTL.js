@@ -31,12 +31,36 @@ function ComenzarIngreso ()
  switch(EstadoCivil)
  {
  	case "1":
- 	document.getElementById('EstadoCivil').value = "Soltero";
- 	break;
+ 		document.getElementById('EstadoCivil').value = "Soltero";
+ 		break;
+ 	case "2":
+ 		document.getElementById('EstadoCivil').value = "Casado";
+ 		break;
+ 	case "3":
+ 		document.getElementById('EstadoCivil').value = "Divorciado";
+ 		break;
+ 	case "4":
+ 		document.getElementById('EstadoCivil').value = "Viudo";
+ 		break;
  }
- 
-
-
+ var Sueldo = prompt("Ingrese sueldo: ");
+ while(isNaN(Sueldo) || Sueldo < 8000)
+ {
+ 	Sueldo = prompt("Ingrese el sueldo nuevamente");
+ }
+ document.getElementById('Sueldo').value = Sueldo;
+ var Legajo = prompt("Ingrese numero de legajo");
+ while(isNaN(Legajo) || (Legajo < 0 || Legajo > 9999))
+ {
+ 	Legajo = prompt("Ingrese nuevamente numero del legajo");
+ }
+ document.getElementById('Legajo').value = Legajo;
+ var Nacionalidad = prompt("Ingrese nacionalidad")
+ while(!isNaN(Nacionalidad)|| Nacionalidad != "A" && Nacionalidad != "E" && Nacionalidad != "N")
+ {
+ 	Nacionalidad = prompt("Ingrese nuevamente su nacionalidad");
+ }
+ document.getElementById('Nacionalidad').value = Nacionalidad;
 
 
  
