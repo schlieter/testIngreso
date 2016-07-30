@@ -11,16 +11,16 @@ function Mostrar()
 	var contador8 = 0;
 	var contador9 = 0;
 	var contador10 = 0;
-	var limite = 1000;
+	var limite = 100000;
 	for(;contador < limite; )
 	{
 		contador++;
 		//console.log(contador);
 		
 		var x = Math.floor((Math.random()*9)+1);
-		if(contador6 = 2)
+		while(x == 5 && contador5>(limite*0.03))
 		{
-			continue;
+			x = Math.floor((Math.random()*9)+1);
 		}
 		switch(x)
 		{
@@ -57,16 +57,16 @@ function Mostrar()
 		}
 	}
 	
-	console.log("numero uno:"+Math.floor(contador1/limite*100));
-	console.log("numero dos:"+Math.floor(contador2/limite*100));
-	console.log("numero tres:"+Math.floor(contador3/limite*100));
-	console.log("numero cuatro:"+Math.floor(contador4/limite*100));
-	console.log("numero cinco:"+Math.floor(contador5/limite*100));
-	console.log("numero seis:"+Math.floor(contador6/limite*100));
-	console.log("numero siete:"+Math.floor(contador7/limite*100));
-	console.log("numero ocho:"+Math.floor(contador8/limite*100));
-	console.log("numero nueve:"+Math.floor(contador9/limite*100));
-	console.log("numero diez:"+Math.floor(contador10/limite*100));
+	console.log("numero uno:"+(contador1/limite*100));
+	console.log("numero dos:"+(contador2/limite*100));
+	console.log("numero tres:"+(contador3/limite*100));
+	console.log("numero cuatro:"+(contador4/limite*100));
+	console.log("numero cinco:"+(contador5/limite*100));
+	console.log("numero seis:"+(contador6/limite*100));
+	console.log("numero siete:"+(contador7/limite*100));
+	console.log("numero ocho:"+(contador8/limite*100));
+	console.log("numero nueve:"+(contador9/limite*100));
+	console.log("numero diez:"+(contador10/limite*100));
 	
 	/*for(var contador = 1; contador <= 10; contador++)
 	{
