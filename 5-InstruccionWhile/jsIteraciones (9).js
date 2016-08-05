@@ -33,8 +33,8 @@ function Mostrar()
 		}	
 		else
 		{
-			if(respuesta == "no")
-			{
+			if(respuesta == "no")//cuando me pide cortar en cierto punto aunque por medio tenga la pregunta 
+			{//se debe colocar otro if abajo del de "si" con la condicion de corte ej. "no" || contador == 5
 				break;
 			}
 		}
